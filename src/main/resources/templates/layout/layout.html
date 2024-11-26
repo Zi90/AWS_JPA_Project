@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>boot_JPA</title>
+    <link href="https://fonts.cdnfonts.com/css/christmas-5" rel="stylesheet">
+
+  <!--/* 부트스트랩 연결 링크  css 연결링크 */-->
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.min.css}">
+    <script th:src="@{/dist/js/bootstrap.bundle.min.js}"></script>
+
+    <link rel="stylesheet" th:href="@{/css/index-style.css}"/>
+
+</head>
+<body>
+    <section class="sky">
+        <div class="title">
+            EZEN <span class="red">X-MAS</span>
+        </div>
+        <div th:replace="~{fragments/header :: header}" class="z-index"></div>
+
+        <div layout:fragment="content" class="z-index"></div>
+
+        <div th:replace="~{fragments/footer :: footer}" class="z-index"></div>
+    </section>
+    <script th:src="@{/js/index-style.js}"></script>
+</body>
+</html>
