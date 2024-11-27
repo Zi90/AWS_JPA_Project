@@ -16,14 +16,54 @@
 </head>
 <body>
     <section class="sky">
-        <div class="title">
-            EZEN <span class="red">X-MAS</span>
+        <div class="container-md">
+            <div class="title">
+                <span class="black">EZEN</span> <span class="red">X-MAS</span>
+                <img src="/image/hat.png" class="img-fluid rounded-start hat" alt="...">
+            </div>
+            <div th:replace="~{fragments/header :: header}" class="z-index"></div>
+
+            <div layout:fragment="content" class="z-index"></div>
+
         </div>
-        <div th:replace="~{fragments/header :: header}" class="z-index"></div>
-
-        <div layout:fragment="content" class="z-index"></div>
-
-        <div th:replace="~{fragments/footer :: footer}" class="z-index"></div>
+        <div class="snow">
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+            <div class="pile"></div>
+        </div>
+            <div th:replace="~{fragments/footer :: footer}" class="z-index"></div>
     </section>
     <script th:src="@{/js/index-style.js}"></script>
 </body>
