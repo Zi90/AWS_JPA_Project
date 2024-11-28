@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test Error Page!</title>
+    <link rel="stylesheet" th:href="@{/css/404-style.css}"/>
+</head>
+<body>
+<div class="window">
+    <div class="santa">
+        <div class="head">
+            <div class="face">
+                <div class="redhat">
+                    <div class="whitepart"></div>
+                    <div class="redpart"></div>
+                    <div class="hatball"></div>
+                </div>
+                <div class="eyes"></div>
+                <div class="beard">
+                    <div class="nouse"></div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+            <div class="ears"></div>
+        </div>
+        <div class="body"></div>
+    </div>
+</div>
+<div class="message">
+    <h1>♥ Happy 404 error ♥</h1>
+    <h2 class="copyright">Merry Christmas! Go back to <a href="/">HOME</a></h2>
+</div>
+<script th:src="@{/js/404-style.js}"></script>
+</body>
+</html>
