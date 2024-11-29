@@ -5,7 +5,10 @@
       layout:decorate="~{layout/layout}">
 
 <div layout:fragment="content">
-    <h1>User List Page</h1>
+    <span>
+        <h1>User List Page</h1>
+        <img src="/image/cookie.png" class="img-fluid rounded-start" alt="..." width="60px">
+    </span>
     <hr>
     <div class="col" th:each="uvo:${userList}">
         <div class="card border-dark mb-3" style="max-width: 540px;">
